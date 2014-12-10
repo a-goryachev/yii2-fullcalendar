@@ -27,9 +27,10 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
-```php
+```
 <?= \goryachev\yii2fullcalendar\Calendar::widget([
-    'plugin options'=>[options of fullcalendar]
-]); ?>```
+    'pluginOptions'=>[array of fullcalendar options]
+]); ?>
+```
 
 Full documentation of fullcalendar [here](http://fullcalendar.io/docs/)
