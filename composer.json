@@ -1,0 +1,22 @@
+{
+    "name": "goryachev/yii2-fullcalendar",
+    "description": "Fullcalendar wrapper for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," fullcalendar"," calendar"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Alexander Goryachev",
+            "email": "mail@a-goryachev.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+	"bower-asset/fullcalendar":"v2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "goryachev\\yii2fullcalendar\\": ""
+        }
+    }
+}
