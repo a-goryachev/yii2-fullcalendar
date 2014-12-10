@@ -1,5 +1,5 @@
 {
-    "name": "goryachev/yii2-fullcalendar",
+    "name": "a-goryachev/yii2-fullcalendar",
     "description": "Fullcalendar wrapper for Yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"," fullcalendar"," calendar"],
