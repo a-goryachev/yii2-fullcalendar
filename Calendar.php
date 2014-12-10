@@ -8,7 +8,7 @@ namespace goryachev\yii2fullcalendar;
  * @category widgets
  * @package yii2fullcalendar
  * 
- * @version 1.0.0
+ * @version 1.1.0
  * 
  * @access public
  * 
@@ -34,6 +34,23 @@ class Calendar extends \yii\base\Widget{
     
     public $htmlOptions=[];
     
+    /**
+     * Enable google calendar support.
+     * 
+     * For using google calendar, set plugin options like below:
+     * <code>
+     * $pluginOptions['googleCalendarApiKey']=<YOUR API KEY>;
+     * 
+     * $pluginOptions['events']['googleCalendarId']=<YOUR GOOGLE CALENDAR ID>
+     * </code>
+     * 
+     * For more information, read fullcalendar documentation
+     * @link http://fullcalendar.io/docs/google_calendar/ Google calendar
+     * 
+     * @var boolean
+     */
+    public $googleCalendar=false;
+    
     public function run(){
         /* check id */
         if(!isset($this->htmlOptions['id'])){
@@ -44,7 +61,13 @@ class Calendar extends \yii\base\Widget{
             $this->pluginOptions['lang']=\Yii::$app->language;
         }
         
+        
         FullcalendarAsset::register($this->getView());
+        /* google calendar */
+        if($this->googleCalendar===true){
+            GooglecalendarAsset::register($this->getView());
+        }
+        
         $pluginOptions=\yii\helpers\Json::encode($this->pluginOptions);
         $this->getView()->registerJs('jQuery("#'.$this->getId().'").fullCalendar('.$pluginOptions.');');
         return \yii\helpers\Html::tag('div', '', $this->htmlOptions);
