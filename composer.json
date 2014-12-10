@@ -12,7 +12,7 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-	"bower-asset/fullcalendar":"v2.*"
+	"bower-asset/fullcalendar":"2.*"
     },
     "autoload": {
         "psr-4": {
