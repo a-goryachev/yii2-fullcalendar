@@ -46,7 +46,7 @@ class Calendar extends \yii\base\Widget{
      * 
      * For more information, read fullcalendar documentation
      * @link http://fullcalendar.io/docs/google_calendar/ Google calendar
-     * 
+     * @since 1.1.0
      * @var boolean
      */
     public $googleCalendar=false;

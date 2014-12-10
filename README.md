@@ -21,6 +21,7 @@ or add
 
 to the require section of your `composer.json` file.
 
+Package not contains any assets. All necessary assets loads by composer as dependencies, using bower-asset.
 
 Usage
 -----

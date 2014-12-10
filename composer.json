@@ -2,6 +2,7 @@
     "name": "a-goryachev/yii2-fullcalendar",
     "description": "Fullcalendar wrapper for Yii2",
     "type": "yii2-extension",
+    "version":"1.1.0",
     "keywords": ["yii2","extension"," fullcalendar"," calendar"],
     "license": "BSD-3-Clause",
     "authors": [

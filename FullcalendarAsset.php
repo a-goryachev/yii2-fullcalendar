@@ -18,7 +18,6 @@ namespace goryachev\yii2fullcalendar;
  * @link http://www.a-goryachev.ru
  * @link https://github.com/a-goryachev
  * 
- * @todo Description
  */
 class FullcalendarAsset extends \yii\web\AssetBundle {
 
@@ -33,7 +32,6 @@ class FullcalendarAsset extends \yii\web\AssetBundle {
     public $depends = [
         'yii\web\JqueryAsset',
         'goryachev\yii2fullcalendar\MomentAsset'
-        
     ];
 
 }
